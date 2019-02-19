@@ -1,6 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin:400');
+/* $teal: #9BCCB9;
+$blue: #84A8C1;
+$violet: #7B7EAD; */
+
 .menu {
-  background-color: rgba(222, 222, 222);
   position: fixed;
   height: 5vh;
   width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+}
+
+.navlink {
+  position: relative;
+  margin-top: 10px;
+  font-family: "Cabin", sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.navlink:hover {
+  opacity: 1;
+  color: black;
+}
+
+.navlink::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #F6BF26;
+}
+
+.navlink::before {
+  width: 40px;
+  bottom: 5px;
+  opacity: 0;
+}
+
+.navlink:hover::before {
+  bottom: 10px;
+  opacity: 1;
 }
