@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin:400');
-/* $teal: #9BCCB9;
-$blue: #84A8C1;
-$violet: #7B7EAD; */
 
 .menu {
   position: fixed;
@@ -16,26 +13,37 @@ $violet: #7B7EAD; */
   margin-top: 10px;
   font-family: "Cabin", sans-serif;
   font-size: 20px;
-  color: black;
+  color: rgba(33,33,33);
 }
 
 .navlink:hover {
   opacity: 1;
-  color: black;
+  color: rgba(33,33,33);
 }
 
 .navlink::before {
   transition: 300ms;
   height: 5px;
+  opacity: 0;
   content: "";
   position: absolute;
   background-color: #F6BF26;
 }
 
 .navlink::before {
-  width: 40px;
   bottom: 5px;
-  opacity: 0;
+}
+
+#about::before {
+  width: 48px;
+}
+
+#work::before {
+  width: 40px;
+}
+
+#contact::before {
+  width: 62px;
 }
 
 .navlink:hover::before {

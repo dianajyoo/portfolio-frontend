@@ -7,8 +7,9 @@ const Menu = (props) => {
 
   return (
     <div className="menu">
-        <NavLink to="/about" className="navlink">about</NavLink>
-        <NavLink to="/projects" className="navlink">work</NavLink>
+      <NavLink to="/about" className="navlink" id="about">about</NavLink>
+      <NavLink to="/projects" className="navlink" id="work">work</NavLink>
+      <NavLink to="/contact" className="navlink" id="contact">contact</NavLink>
     </div>
   )
 
