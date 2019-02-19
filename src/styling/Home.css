@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Amiri:400,700');
+@import url('https://fonts.googleapis.com/css?family=Cabin:400');
+
+.home {
+  height: 100vh;
+  width: 100vw;
+}
+
+.text {
+  position: relative;
+  font-family: "Cabin", sans-serif;
+  font-size: 80px;
+  color: black;
+  top: 200px;
+  white-space: pre-line;
+  line-height: 85px;
+}
