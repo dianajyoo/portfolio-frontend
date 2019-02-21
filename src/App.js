@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 import Home from "./components/Home"
-import Form from "./components/Form"
+import ContactForm from "./components/ContactForm"
 import About from "./components/About"
 import NavBar from "./components/NavBar"
 
@@ -18,7 +18,7 @@ class App extends Component {
          <Switch>
            <Route exact path="/" component={Home} />
            <Route path="/about" component={About} />
-           <Route path="/contact" component={Form} />
+           <Route path="/contact" component={ContactForm} />
          </Switch>
         </div>
    </Router>
