@@ -1,5 +1,4 @@
 import React from "react"
-import Menu from "./menu/Menu"
 import "../styling/Home.css"
 
 const Home = (props) => {
@@ -7,7 +6,6 @@ const Home = (props) => {
 
   return (
     <div className="home">
-      <Menu />
       <span className="text">
         {text}
       </span>
