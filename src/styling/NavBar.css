@@ -1,18 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin:400');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
-.menu {
+.navbar {
   position: fixed;
-  height: 5vh;
+  height: 10vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: repeat(3, 100px);
+  grid-template-columns: repeat(4, 150px);
 }
 
 .navlink {
   position: relative;
-  margin-top: 10px;
-  font-family: "Cabin", sans-serif;
-  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 50px;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
   color: rgba(33,33,33);
 }
 
@@ -34,19 +36,23 @@
   bottom: 5px;
 }
 
+#home::before {
+  width: 98px;
+}
+
 #about::before {
-  width: 48px;
+  width: 50px;
 }
 
 #work::before {
-  width: 40px;
+  width: 48px;
 }
 
 #contact::before {
-  width: 62px;
+  width: 70px;
 }
 
 .navlink:hover::before {
-  bottom: 10px;
+  bottom: 40px;
   opacity: 1;
 }
