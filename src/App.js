@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import Home from "./components/Home"
 import ContactForm from "./components/ContactForm"
 import About from "./components/About"
+import Work from "./components/Work"
 import NavBar from "./components/NavBar"
 
 import '../node_modules/semantic-ui/dist/semantic.min.css'
@@ -18,6 +19,7 @@ class App extends Component {
          <Switch>
            <Route exact path="/" component={Home} />
            <Route path="/about" component={About} />
+           <Route path="/projects" component={Work} />
            <Route path="/contact" component={ContactForm} />
          </Switch>
         </div>
