@@ -1,6 +1,6 @@
 const initialState = {
   message: {},
-  request: false,
+  request: false
 }
 
 const contactReducer = (state = initialState, action) => {
