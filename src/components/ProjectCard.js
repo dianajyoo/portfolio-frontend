@@ -1,10 +1,10 @@
 import React from "react"
 import "../styling/ProjectCard.css"
 
-const ProjectCard = () => {
+const ProjectCard = ({source}) => {
     return (
         <div className="card">
-            PHOTO HERE
+            <img src={source} alt="screenshot" className="preview" />
         </div>
     )
 }

@@ -11,7 +11,6 @@ export function getPhotoUrl(url) {
     return fetch(API_URL + url)
       .then(res => res.json())
       .then(photos => {
-        console.log(photos)
         dispatch(getPhoto(photos))
       })
       .catch(console.error)
