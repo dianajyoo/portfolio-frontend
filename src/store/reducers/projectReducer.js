@@ -1,5 +1,6 @@
 const initialState = {
-  photos: []
+  photos: [],
+  projects: []
 }
 
 const projectReducer = (state = initialState, action) => {
@@ -7,6 +8,10 @@ const projectReducer = (state = initialState, action) => {
     case "GET_PHOTO":
       return {
         ...state, photos: action.data
+      }
+    case "GET_PROJECT_INFO":
+      return {
+        ...state, projects: action.data
       }
     default:
       return state

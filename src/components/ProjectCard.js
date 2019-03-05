@@ -1,10 +1,11 @@
 import React from "react"
+import { NavLink } from "react-router-dom"
 import "../styling/ProjectCard.css"
 
-const ProjectCard = ({source}) => {
+const ProjectCard = ({photo}) => {
     return (
         <div className="card">
-            <img src={source} alt="screenshot" className="preview" />
+            <NavLink to="/work" className="navlink"><img src={photo.source} alt="screenshot" className="preview" /></NavLink> 
         </div>
     )
 }
