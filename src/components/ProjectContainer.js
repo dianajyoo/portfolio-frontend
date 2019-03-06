@@ -1,17 +1,16 @@
 import React from "react"
 import { connect } from "react-redux"
 import ProjectCard from "./ProjectCard"
-import { getPhotoUrl, getProject } from "../store/actions/projectActions"
+import { getProjects } from "../store/actions/projectActions"
 import "../styling/ProjectContainer.css"
 
 class ProjectContainer extends React.Component {
   componentDidMount() {
-    this.props.getPhotoUrl("api/v1/photos")
-    this.props.getProject("api/v1/projects")
+    this.props.getProjects("api/v1/projects")
   }
     
   render() {    
-    let renderPhotos = this.props.photos.map(photo => <ProjectCard photo={photo} project={this.props.projects} />)
+    let renderPhotos = this.props.projects.map(project => <ProjectCard project={project} photos={project.photos} />)
 
     return (
       <div className="grid-container">
@@ -23,15 +22,13 @@ class ProjectContainer extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    photos: state.projects.photos,
     projects: state.projects.projects
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-      getPhotoUrl: (url) => dispatch(getPhotoUrl(url)),
-      getProject: (url) => dispatch(getProject(url))
+    getProjects: (url) => dispatch(getProjects(url))
   }
 }
 

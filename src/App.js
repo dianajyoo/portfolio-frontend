@@ -19,11 +19,11 @@ class App extends Component {
          <Switch>
            <Route exact path="/" component={Home} />
            <Route path="/about" component={About} />
-           <Route path="/projects" component={ProjectContainer} />
+           <Route path="/projects" render={(props) => <ProjectContainer {...props} />} />
            <Route path="/contact" component={ContactForm} />
          </Switch>
         </div>
-   </Router>
+      </Router>
     );
   }
 }

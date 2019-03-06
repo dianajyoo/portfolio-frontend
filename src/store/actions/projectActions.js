@@ -12,7 +12,7 @@ export const getProjectInfo = (data) => {
   }
 }
 
-export function getPhotoUrl(url) {
+export function getAllPhotos(url) {
   return (dispatch) => {
     return fetch(API_URL + url)
       .then(res => res.json())
@@ -23,7 +23,7 @@ export function getPhotoUrl(url) {
   }
 }
 
-export function getProject(url) {
+export function getProjects(url) {
   return (dispatch) => {
     return fetch(API_URL + url)
       .then(res => res.json())
