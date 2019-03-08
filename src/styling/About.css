@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 
 .about {
-  position: relative;
   /* margin-top: 100px; */
+  height: 80vh;
+  width: 100vw;
   font-family: "Open Sans", sans-serif;
   color: rgba(33,33,33);
 }

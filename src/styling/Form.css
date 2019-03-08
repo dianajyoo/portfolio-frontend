@@ -5,7 +5,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  top: 150px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
+  height: 80vh;
+  width: 100vw;
 }

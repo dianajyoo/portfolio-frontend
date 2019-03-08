@@ -2,10 +2,13 @@
 
 .navbar {
   position: fixed;
-  height: 10vh;
+  height: 7vh;
   width: 100vw;
+  top: 0;
   display: grid;
   grid-template-columns: repeat(4, 150px);
+  background-color: white;
+  z-index: 1;
 }
 
 .navlink {
