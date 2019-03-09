@@ -18,9 +18,27 @@ export const sendEmail = (data) => {
   }
 }
 
+export const receivedError = () => {
+  return {
+    type: "RECEIVED_ERROR"
+  }
+}
+
+export const receivedResponse = () => {
+  return {
+    type: "RECEIVED_RESPONSE"
+  }
+}
+
+export const resetError = () => {
+  return {
+    type: "RESET_ERROR"
+  }
+}
+
 export function submitContactRequest(url, data) {
-  console.log(JSON.stringify({ data }))
   return (dispatch) => {
+    dispatch(requestToSendEmail())
     dispatch(clearEmailDetails())
     return fetch(API_URL + url, {
       method: "POST",
@@ -32,8 +50,17 @@ export function submitContactRequest(url, data) {
     })
     .then(res => res.json())
     .then(msg => {
-      dispatch(sendEmail(msg))
+      if (msg.message === "Error") {
+        dispatch(receivedError())
+      } else {
+        dispatch(receivedResponse())
+        dispatch(sendEmail(msg))
+      }
     })
-    .catch(console.error)
+    .then(dispatch(resetError()))
+    .catch(err => {
+      dispatch(receivedError())
+    })
   }
 }
+

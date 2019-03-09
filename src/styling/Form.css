@@ -1,12 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 
 .form {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
   height: 80vh;
   width: 100vw;
+  color: rgba(50,50,50);
 }
+
+.form .four.wide.field label {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+.form h3 {
+  font-family: "Work Sans", sans-serif;
+  padding: 1.5em;
+}
+

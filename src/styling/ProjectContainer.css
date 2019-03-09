@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 
 .grid-container {
   display: grid;
@@ -8,8 +8,21 @@
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   position: relative;
-  margin-top: 100px;
   height: 100vh;
   width: 100vw;
+}
+
+.work p:first-child {
+  font-family: "Work Sans", sans-serif;
+  font-size: 7em;
+  font-weight: 600;
+  margin-top: 0.5em;
+  margin-bottom: -5%;
+  margin-left: 8em;
+  color:#B7A196
+}
+
+.work span {
+  color: rgba(133,207,218)
 }
 

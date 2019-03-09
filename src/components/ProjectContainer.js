@@ -13,8 +13,11 @@ class ProjectContainer extends React.Component {
     let renderPhotos = this.props.projects.map(project => <ProjectCard project={project} photos={project.photos} />)
 
     return (
-      <div className="grid-container">
-        {renderPhotos}
+      <div className="work">
+        <p>WORK<span>.</span></p>
+        <div className="grid-container">
+          {renderPhotos}
+        </div>
       </div>
     )
   }

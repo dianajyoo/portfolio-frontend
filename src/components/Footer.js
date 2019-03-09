@@ -1,12 +1,51 @@
 import React from "react"
+import { withRouter } from "react-router"
 import "../styling/Footer.css"
 
 const Footer = (props) => {
+
+  const openClickedLink = (e) => {
+    if (e.target.className === "github icon") {
+      window.open("https://www.github.com/dianajyoo")
+    } else if (e.target.className === "medium m icon") {
+      window.open("https://www.medium.com/@dianajyoo") 
+    } else if (e.target.className === "linkedin icon") {
+      window.open("https://www.linkedin.com/in/dianajyoo")
+    } else {
+      props.history.replace("/contact")
+    }
+  }
+
   return (
-    <div className="footer">
-      FOOTER
+    <div className="footer" id="container">
+      <div className="footer text-container">
+        <p>STAY CONNECTED</p>
+      
+        <div className="links">
+          <button className="ui circular github icon button" onClick={e => openClickedLink(e)}>
+            <i className="github icon"></i>
+          </button>
+
+          <button className="ui circular medium m icon button" onClick={e => openClickedLink(e)}>
+            <i className="medium m icon"></i>
+          </button>
+
+          <button className="circular ui icon button" onClick={e => openClickedLink(e)}>
+            <i className="linkedin icon"></i>
+          </button>
+
+          <button className="circular ui icon button" onClick={e => openClickedLink(e)}>
+            <i className="envelope outline icon"></i>
+          </button>
+        </div>
+      </div>
+
+      <div className="footer footnote">
+        <i className="react icon"></i>
+        <p>Powered by React.js </p>
+      </div>
     </div>
   )
 }
 
-export default Footer
+export default withRouter(Footer)

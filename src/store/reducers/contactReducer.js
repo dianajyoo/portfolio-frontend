@@ -1,6 +1,8 @@
 const initialState = {
   message: {},
-  request: false
+  request: false,
+  isError: false,
+  isSuccess: false
 }
 
 const contactReducer = (state = initialState, action) => {
@@ -16,6 +18,18 @@ const contactReducer = (state = initialState, action) => {
     case "SEND_EMAIL":
       return {
         ...state, message: action.data
+      }
+    case "RECEIVED_ERROR":
+      return {
+        ...state, isError: true
+      }
+    case "RECEIVED_RESPONSE":
+      return {
+        ...state, isSuccess: true
+      }
+    case "RESET_ERROR":
+      return {
+        ...state, isError: false
       }
     default:
       return state

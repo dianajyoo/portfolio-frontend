@@ -1,10 +1,10 @@
 import React, { Component } from "react"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
-import Home from "./components/Home"
+import FrontPage from "./containers/FrontPage"
+import ProjectContainer from "./components/ProjectContainer"
 import ContactForm from "./components/ContactForm"
 import About from "./components/About"
-import ProjectContainer from "./components/ProjectContainer"
 import NavBar from "./components/NavBar"
 import Footer from "./components/Footer"
 
@@ -18,9 +18,9 @@ class App extends Component {
         <div className="App">
           <NavBar />
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" component={FrontPage} />
+            <Route path="/projects" component={ProjectContainer} />
             <Route path="/about" component={About} />
-            <Route path="/projects" render={(props) => <ProjectContainer {...props} />} />
             <Route path="/contact" component={ContactForm} />
           </Switch>
           <Footer />

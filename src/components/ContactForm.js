@@ -1,4 +1,5 @@
 import React from "react"
+import Message from "./Message"
 import { connect } from "react-redux"
 import { submitContactRequest } from "../store/actions/contactActions"
 import "../styling/Form.css"
@@ -8,7 +9,8 @@ class ContactForm extends React.Component {
     name: "",
     email: "",
     subject: "",
-    message: ""
+    message: "",
+    submitted: false
   }
 
   clearState = () => {
@@ -29,38 +31,47 @@ class ContactForm extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault()
 
+    this.setState({
+      submitted: true
+    })
+
     this.props.submitContactRequest("api/v1/contacts", this.state)
     this.clearState()
   }
 
   render() {
     return (
-      <form className="ui form" onSubmit={e => this.handleSubmit(e)}>
-        <div className="four wide field">
-          <label>Name</label>
-          <input type="text" name="name" value={this.state.name} onChange={e => this.handleOnChange(e)} />
-        </div>
+      <div className="form-container">
+        <form className="ui form" onSubmit={e => this.handleSubmit(e)}>
+          <h3>Send me an email</h3>
+          <div className="four wide field">
+            <label>Name</label>
+            <input type="text" name="name" value={this.state.name} onChange={e => this.handleOnChange(e)} />
+          </div>
 
-        <div className="four wide field">
-          <label>Email</label>
-          <input type="text" name="email" value={this.state.email} onChange={e => this.handleOnChange(e)} />
-        </div>
+          <div className="four wide field">
+            <label>Email</label>
+            <input type="text" name="email" value={this.state.email} onChange={e => this.handleOnChange(e)} />
+          </div>
 
-        <div className="four wide field">
-          <label>Subject</label>
-          <input type="text" name="subject" value={this.state.subject} onChange={e => this.handleOnChange(e)} />
-        </div>
+          <div className="four wide field">
+            <label>Subject</label>
+            <input type="text" name="subject" value={this.state.subject} onChange={e => this.handleOnChange(e)} />
+          </div>
 
-        <div className="four wide field">
-          <label>Message</label>
-          <textarea name="message" value={this.state.message} onChange={e => this.handleOnChange(e)}></textarea>
-        </div>
+          <div className="four wide field">
+            <label>Message</label>
+            <textarea name="message" value={this.state.message} onChange={e => this.handleOnChange(e)}></textarea>
+          </div>
 
-        <button className="ui basic button">
-          <i className="paper plane icon"></i>
-          Send
-        </button>
-      </form>
+          <button className="ui basic button">
+            <i className="paper plane icon"></i>
+            Send
+          </button>
+        </form>
+
+        {this.state.submitted ? <Message /> : null}
+      </div>
     )
   }
 }
@@ -70,6 +81,5 @@ const mapDispatchToProps = (dispatch) => {
     submitContactRequest: (url, data) => dispatch(submitContactRequest(url, data))
   }
 }
-
 
 export default connect(null, mapDispatchToProps)(ContactForm)
