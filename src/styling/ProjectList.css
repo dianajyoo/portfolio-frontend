@@ -4,25 +4,24 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-gap: 50px;
-  grid-template-columns: auto auto;
+  grid-gap: 25px;
+  grid-template-columns: 500px 500px;
   grid-template-rows: auto auto;
   position: relative;
+  margin-top: 8em;
   height: 100vh;
   width: 100vw;
 }
 
-.work p:first-child {
+.grid-container p:first-child {
   font-family: "Work Sans", sans-serif;
   font-size: 7em;
   font-weight: 600;
-  margin-top: 0.5em;
-  margin-bottom: -5%;
-  margin-left: 8em;
+  margin-top: -3em;
+  margin-left: 7.5em;
   color:#B7A196
 }
 
-.work span {
+.grid-container span {
   color: rgba(133,207,218)
 }
-
