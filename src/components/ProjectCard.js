@@ -1,14 +1,14 @@
 import React from "react"
-import { NavLink } from "react-router-dom"
 import "../styling/ProjectCard.css"
 
-const ProjectCard = ({project, photos}) => {
+const ProjectCard = ({ match, project }) => {
     return (
-        <div className="card">
-            <NavLink to="/work" className="navlink"><img src={photos.length ? photos[0].source : null} alt="screenshot" className="preview" /></NavLink>
-            <h1>{project.name}</h1>
-            <p>{project.description}</p>
-        </div>
+        project.id === parseInt(match.params.workId) ? 
+          <div className="project-show">
+            <img src={`${project.gif.split(", ")[0]}`} alt={project.name} className="gif" />
+            <div className="details">{project.summary} <br /><br /> Built With: {project.tools} <br /><br /> State: In Development</div>
+          </div>
+          : <div></div>
     )
 }
 

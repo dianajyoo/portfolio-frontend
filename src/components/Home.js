@@ -6,9 +6,7 @@ const Home = (props) => {
 
   return (
     <div className="home">
-      <span className="text">
-        {text}
-      </span>
+      <p>{text}</p>
     </div>
   )
 }

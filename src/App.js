@@ -6,7 +6,6 @@ import ProjectContainer from "./components/ProjectContainer"
 import ContactForm from "./components/ContactForm"
 import About from "./components/About"
 import NavBar from "./components/NavBar"
-import Work from "./components/Work"
 import Footer from "./components/Footer"
 
 import '../node_modules/semantic-ui/dist/semantic.min.css'
@@ -22,7 +21,6 @@ class App extends Component {
             <Route exact path="/" component={FrontPage} />
             <Route path="/projects" render={(props) => <ProjectContainer {...props} />} />
             <Route path="/about" component={About} />
-            <Route path="/work" component={Work} />
             <Route path="/contact" component={ContactForm} />
           </Switch>
           <Footer />
