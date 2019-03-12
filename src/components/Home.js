@@ -1,12 +1,21 @@
 import React from "react"
+import { NavLink } from "react-router-dom"
 import "../styling/Home.css"
 
 const Home = (props) => {
-  const text = "Diana J. Yoo \n full stack developer \n from nyc"
-
   return (
     <div className="home">
-      <p>{text}</p>
+      <p><span>Diana J. Yoo</span> {"\n"} full stack <span>developer</span> {"\n"} from nyc</p>
+
+      <div className="btn">
+        <NavLink to="/projects">
+          <button className="large ui brown basic button">
+            VIEW MY WORK
+            <i className="arrow alternate circle right icon"></i>
+          </button>
+        </NavLink>
+      </div>
+      
     </div>
   )
 }

@@ -1,15 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 
-.project-show {
+.details-container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 80vh;
   width: 75vw;
-  margin: 0 auto
+  margin: 0 auto;
+  margin-top: -5em;
 }
 
-.project-show img {
+#project-id {
+  font-family: "Work Sans", sans-serif;
+  font-size: 7em;
+  font-weight: 600;
+  /* color: #B7A196; */
+  color: rgba(133,207,218);
+  margin-top: 1.5em;
+  margin-right: 2em;
+  text-align: right;
+}
+
+#project-id span {
+  /* color: rgba(133,207,218); */
+  color: #B7A196;
+}
+
+.details-container img {
   height: 450px;
   width: 650px;
   padding: 0.8em;
@@ -18,5 +35,6 @@
 .details {
   font-family: "Work Sans", sans-serif;
   font-size: 1.5em;
+  color: rgba(50,50,50);
   line-height: normal;
 }

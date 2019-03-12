@@ -2,17 +2,27 @@
 
 .card {
   position: relative;
-  height: 300px;
-  width: 500px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 30vw;
+  height: 35vh;
   font-family: "Work Sans", sans-serif;
   font-weight: 600;
   color: white;
 }
 
+.navlink {
+  position: absolute;
+  margin: 0 auto;
+}
+
 .preview {
-  opacity: 1;
-  width: 500px;
-  height: 300px;
+  width: 30vw;
+  height: 35vh;
+  margin: 0 auto;
+  margin-left: -1em;
   transition: .5s ease;
 }
 
@@ -21,8 +31,7 @@
   opacity: 0;
   position: absolute;
   top: 25%;
-  left: 40%;
-  text-align: center;
+  left: 35%;
 }
 
 .card p {
@@ -30,9 +39,8 @@
   opacity: 0;
   position: absolute;
   top: 50%;
-  left: 10%;
-  font-size: 1.2em;
-  text-align: center;
+  padding: 3%;
+  font-size: 1.1em;
 }
 
 .card:hover .preview {
