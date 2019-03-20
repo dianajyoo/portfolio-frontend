@@ -6,7 +6,7 @@
   justify-content: center;
   grid-gap: 25px;
   grid-template-columns: 450px 450px;
-  grid-template-rows: 300px 300px;
+  grid-template-rows: 275px 275px;
   position: relative;
   margin-top: 15em;
   height: 100vh;
@@ -17,7 +17,7 @@
   font-family: "Work Sans", sans-serif;
   font-size: 7em;
   font-weight: 600;
-  margin-top: -3em;
+  margin-top: -2.5em;
   margin-left: 6em;
   color:#B7A196
 }

@@ -9,6 +9,7 @@
   align-items: center;
   grid-template-columns: repeat(4, 150px);
   background-color: white;
+  padding: 0.8em 0.8em 0.8em 0.8em;
   z-index: 1;
 }
 
@@ -20,6 +21,10 @@
 }
 
 .navlink:hover {
+  color: rgba(133,207,218)
+}
+
+.active {
   color: rgba(133,207,218)
 }
 

@@ -32,11 +32,11 @@
   color: rgba(133,207,218);
 }
 
-.home span:nth-of-type(2) {
+/* .home span:nth-of-type(2) {
   transition: ease-in;
   animation: slant 7s;
   animation-fill-mode: forwards;
-}
+} */
 
 @keyframes bounceIn {
   0% {
