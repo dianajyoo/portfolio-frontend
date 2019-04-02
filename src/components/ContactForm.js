@@ -64,7 +64,7 @@ class ContactForm extends React.Component {
             <textarea name="message" value={this.state.message} onChange={e => this.handleOnChange(e)}></textarea>
           </div>
 
-          <button className="ui basic button">
+          <button className="big ui basic button">
             <i className="paper plane icon"></i>
             Send
           </button>

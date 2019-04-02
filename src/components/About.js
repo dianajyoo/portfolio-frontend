@@ -6,6 +6,7 @@ class About extends React.Component {
     return (
       <div className="about">
         ABOUT PAGE
+        Where is my words???
       </div>
     )
   }

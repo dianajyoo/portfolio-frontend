@@ -7,17 +7,16 @@
   height: 80vh;
   width: 75vw;
   margin: 0 auto;
-  margin-top: -5em;
+  /* margin-top: -5em; */
 }
 
 #project-id {
   font-family: "Work Sans", sans-serif;
-  font-size: 7em;
+  font-size: 10rem;
   font-weight: 600;
-  /* color: #B7A196; */
   color: rgba(133,207,218);
-  margin-top: 1.5em;
-  margin-right: 2em;
+  margin-top: 200px;
+  margin-right: 200px;
   text-align: right;
 }
 
@@ -29,12 +28,12 @@
 .details-container img {
   height: 450px;
   width: 650px;
-  padding: 0.8em;
+  padding: 50px;
 }
 
 .details {
   font-family: "Work Sans", sans-serif;
-  font-size: 1.5em;
+  font-size: 2rem;
   color: rgba(50,50,50);
   line-height: normal;
 }
