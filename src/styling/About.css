@@ -1,10 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 
 .about {
-  margin-top: 100px;
-  height: 80vh;
+  margin-top: 250px;
+  height: 100vh;
   width: 100vw;
   font-family: "Open Sans", sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
   color: rgba(33,33,33);
+}
+
+.about-container {
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.about-container p {
+  padding: 25px;
+}
+
+.about-container img {
+  height: 275px;
+  max-width: 300px;
+  width: 100%;
 }

@@ -22,19 +22,19 @@ const Footer = (props) => {
         <p>STAY CONNECTED</p>
       
         <div className="links">
-          <button className="ui circular github icon button" onClick={e => openClickedLink(e)}>
+          <button className="big ui circular github icon button" onClick={e => openClickedLink(e)}>
             <i className="github icon"></i>
           </button>
 
-          <button className="ui circular medium m icon button" onClick={e => openClickedLink(e)}>
+          <button className="big ui circular medium m icon button" onClick={e => openClickedLink(e)}>
             <i className="medium m icon"></i>
           </button>
 
-          <button className="circular ui icon button" onClick={e => openClickedLink(e)}>
+          <button className="big ui circular icon button" onClick={e => openClickedLink(e)}>
             <i className="linkedin icon"></i>
           </button>
 
-          <button className="circular ui icon button" onClick={e => openClickedLink(e)}>
+          <button className="big ui circular icon button" onClick={e => openClickedLink(e)}>
             <i className="envelope outline icon"></i>
           </button>
         </div>

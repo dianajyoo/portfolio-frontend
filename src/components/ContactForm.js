@@ -42,26 +42,22 @@ class ContactForm extends React.Component {
   render() {
     return (
       <div className="form-container">
-        <form className="ui form" onSubmit={e => this.handleSubmit(e)}>
+        <form className="ui massive form" onSubmit={e => this.handleSubmit(e)}>
           <h3>Send me an email</h3>
           <div className="four wide field">
-            <label>Name</label>
-            <input type="text" name="name" value={this.state.name} onChange={e => this.handleOnChange(e)} />
+            <input type="text" name="name" value={this.state.name} placeholder="Name" onChange={e => this.handleOnChange(e)} />
           </div>
 
           <div className="four wide field">
-            <label>Email</label>
-            <input type="text" name="email" value={this.state.email} onChange={e => this.handleOnChange(e)} />
+            <input type="text" name="email" value={this.state.email} placeholder="Email" onChange={e => this.handleOnChange(e)} />
           </div>
 
           <div className="four wide field">
-            <label>Subject</label>
-            <input type="text" name="subject" value={this.state.subject} onChange={e => this.handleOnChange(e)} />
+            <input type="text" name="subject" value={this.state.subject} placeholder="Subject" onChange={e => this.handleOnChange(e)} />
           </div>
 
           <div className="four wide field">
-            <label>Message</label>
-            <textarea name="message" value={this.state.message} onChange={e => this.handleOnChange(e)}></textarea>
+            <textarea name="message" value={this.state.message} placeholder="Message" onChange={e => this.handleOnChange(e)}></textarea>
           </div>
 
           <button className="big ui basic button">
