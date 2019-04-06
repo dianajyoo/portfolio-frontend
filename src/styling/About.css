@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 
 .about {
-  margin-top: 250px;
   height: 100vh;
   width: 100vw;
   font-family: "Open Sans", sans-serif;
@@ -12,16 +11,42 @@
 
 .about-container {
   display: flex;
+  justify-content: center;
   margin: 0 auto;
-  width: 50%;
+}
+
+@media only screen and (min-width: 992px) {
+  .about {
+    margin-top: 250px; 
+  }
+
+  .about-container {
+    width: 50%;
+  }
+
+  .about-container img {
+    height: 275px;
+    max-width: 300px;
+    width: 100%;
+  }  
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    margin-top: 100px;
+  }
+
+  .about-container {
+    flex-wrap: wrap;
+  }
+
+  .about-container img {
+    height: 200px;
+    max-width: 225px;
+    width: 100%;
+  }  
 }
 
 .about-container p {
-  padding: 25px;
-}
-
-.about-container img {
-  height: 275px;
-  max-width: 300px;
-  width: 100%;
+  padding: 30px;
 }

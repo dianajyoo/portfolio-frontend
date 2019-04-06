@@ -19,13 +19,24 @@
 }
 
 .home p {
-  font-size: 8rem;
   font-weight: bold;
   color: rgba(50,50,50);
   white-space: pre-line;
-  line-height: 85px;
   animation-duration: 2s;
   animation-name: bounceIn;
+}
+
+@media only screen and (min-width: 992px) {
+  .home p {
+    font-size: 8rem;
+    line-height: 85px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home p {
+    font-size: 4.5rem;
+  }
 }
 
 .home span:first-of-type {
@@ -46,11 +57,3 @@
   }
 }
 
-/* @keyframes slant {
-  0% {
-    font-style: normal;
-  }
-  100% {
-    font-style: italic;
-  }
-} */
