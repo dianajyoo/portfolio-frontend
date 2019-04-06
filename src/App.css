@@ -1,7 +1,14 @@
-@media screen and (min-width: 900px) {
+@media only screen and (min-width: 992px) {
   html {
     /* set 1rem to 10px */
     font-size: 62.5%; 
+  } 
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    /* set 1rem to 8px */
+    font-size: 50%; 
   } 
 }
 
