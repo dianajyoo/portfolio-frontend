@@ -9,8 +9,8 @@ const Overlay = ({project, photos }) => {
     }
 
     return (
-        <div className="card">
-            <NavLink to={`/projects/${project.id}`} className="navlink"><img src={photos.length ? photos[0].source : null} alt="screenshot" className="preview" onClick={scrollIntoView()} /></NavLink>
+        <div className="image-container">
+            <NavLink to={`/projects/${project.id}`} className="navlink"><img src={photos.length ? photos[0].source : null} alt="screenshot" className="image" onClick={scrollIntoView()} /></NavLink>
             <h1>{project.name}</h1>
             <p>{project.description}</p>
         </div>

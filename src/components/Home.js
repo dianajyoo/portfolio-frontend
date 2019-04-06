@@ -9,7 +9,7 @@ const Home = (props) => {
 
       <div className="btn">
         <NavLink to="/projects">
-          <button className="large ui brown basic button">
+          <button className="big ui brown basic button">
             VIEW MY WORK
             <i className="arrow alternate circle right icon"></i>
           </button>

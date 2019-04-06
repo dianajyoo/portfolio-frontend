@@ -13,6 +13,10 @@
   z-index: 1;
 }
 
+@media only screen and (max-width: 600px) {
+  
+}
+
 .navlink {
   position: relative;
   font-family: "Work Sans", sans-serif;

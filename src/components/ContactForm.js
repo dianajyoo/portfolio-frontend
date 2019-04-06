@@ -60,7 +60,7 @@ class ContactForm extends React.Component {
             <textarea name="message" value={this.state.message} placeholder="Message" onChange={e => this.handleOnChange(e)}></textarea>
           </div>
 
-          <button className="big ui basic button">
+          <button className="massive ui basic button">
             <i className="paper plane icon"></i>
             Send
           </button>
