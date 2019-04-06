@@ -5,9 +5,28 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 90vh;
-  width: 100vw;
   color: rgba(50,50,50);
+}
+
+@media only screen and (min-width: 992px) {
+  .form {
+    margin-top: 100px;
+  }
+
+  .field::before {
+    /* content: "four wide " */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form {
+    margin-top: 55px;
+  }
+
+  .form-wrapper {
+    /* width: 100vw;
+    height: 60vh; */
+  }
 }
 
 .form .four.wide.field label {
@@ -19,7 +38,7 @@
 .form h3 {
   font-family: "Work Sans", sans-serif;
   font-size: 2rem;
-  padding: 30px;
+  padding: 20px;
 }
 
 

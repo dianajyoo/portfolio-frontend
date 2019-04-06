@@ -41,31 +41,33 @@ class ContactForm extends React.Component {
 
   render() {
     return (
-      <div className="form-container">
+      <div className="form-wrapper">
         <form className="ui massive form" onSubmit={e => this.handleSubmit(e)}>
           <h3>Send me an email</h3>
-          <div className="four wide field">
+          <div className="field">
             <input type="text" name="name" value={this.state.name} placeholder="Name" onChange={e => this.handleOnChange(e)} />
           </div>
 
-          <div className="four wide field">
+          <div className="field">
             <input type="text" name="email" value={this.state.email} placeholder="Email" onChange={e => this.handleOnChange(e)} />
           </div>
 
-          <div className="four wide field">
+          <div className="field">
             <input type="text" name="subject" value={this.state.subject} placeholder="Subject" onChange={e => this.handleOnChange(e)} />
           </div>
 
-          <div className="four wide field">
+          <div className="field">
             <textarea name="message" value={this.state.message} placeholder="Message" onChange={e => this.handleOnChange(e)}></textarea>
           </div>
+
+          <br />
 
           <button className="massive ui basic button">
             <i className="paper plane icon"></i>
             Send
           </button>
         </form>
-
+    
         {this.state.submitted ? <Message /> : null}
       </div>
     )
