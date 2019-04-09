@@ -13,14 +13,14 @@
   }  
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .image {
      width: 60vw;
      height: 45vh;
    }
  }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
  .image {
     width: 55vw;
     height: 30vh;

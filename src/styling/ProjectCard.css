@@ -1,22 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 
+.project-container {
+  /* overflow: scroll; */
+}
+
 .details-container {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   height: 75vh;
-  width: 1080px;
+  max-width: 1080px;
+  width: 100vw;
   margin: 0 auto;
 }
 
 #project-id {
   font-family: "Work Sans", sans-serif;
-  font-size: 10rem;
   font-weight: 600;
   color: rgba(133,207,218);
   margin-top: 200px;
-  margin-right: 200px;
   text-align: right;
 }
 
@@ -25,9 +28,6 @@
 }
 
 .details-container img {
-  height: 400px;
-  max-width: 650px;
-  width: 100%;
   padding: 30px;
 }
 
@@ -37,24 +37,83 @@
   -webkit-animation: firstSlide 20s infinite;
 }
 
-.details-container img:nth-of-type(2) {
+@media only screen and (min-width: 992px) {
+  #project-id {
+    font-size: 10rem;
+    margin-right: 200px;
+  }
+
+  .details-container img {
+    max-width: 40vw;
+    height: 45vh;
+    width: 100%;
+  }
+
+  .summary {
+    padding: 25px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .details-container {
+    flex-wrap: wrap;
+  }
+
+  .details-container img {
+    max-width: 60vw;
+    height: 50vh;
+    width: 100%;
+  }
+
+  #project-id {
+    font-size: 6rem;
+    margin-right: 80px;
+  }
+
+  .summary {
+    padding: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .details-container {
+    flex-wrap: wrap;
+  }
+
+  .details-container img {
+    max-width: 60vw;
+    height: 35vh;
+    width: 100%;
+  }
+
+  #project-id {
+    font-size: 5rem;
+    margin-right: 25px;
+  }
+
+  .summary {
+    padding: 35px;
+  }
+}
+
+/* .details-container img:nth-of-type(2) {
   position: absolute;
   right: 430px;
   animation: secSlide 20s infinite;
   animation-delay: 20s;
   -webkit-animation: secSlide 20s infinite;
-}
+} */
 
-.details {
+.summary {
   font-family: "Work Sans", sans-serif;
   font-size: 2rem;
   color: rgba(50,50,50);
   line-height: normal;
-  padding: 25px;
+  width: 100vw;
 }
 
 /* automatic slideshow */
-@keyframes firstSlide {
+/* @keyframes firstSlide {
   0% {
     display: block;
     opacity: 1;
@@ -90,4 +149,4 @@
     display: none;
     opacity: 0;
   }
-}
+} */

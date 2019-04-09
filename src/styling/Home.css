@@ -26,6 +26,7 @@
   animation-name: bounceIn;
 }
 
+/* laptops */
 @media only screen and (min-width: 992px) {
   .home p {
     font-size: 8rem;
@@ -33,7 +34,15 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+/* ipads */
+@media only screen and (max-width: 992px) {
+  .home p {
+    font-size: 6rem;
+  }
+}
+
+/* phones, mini ipads */
+@media only screen and (max-width: 768px) {
   .home p {
     font-size: 4.5rem;
   }

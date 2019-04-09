@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 
 .about {
-  height: 65vh;
+  height: 80vh;
   width: 100vw;
   font-family: "Open Sans", sans-serif;
   font-size: 1.8rem;
@@ -31,7 +31,24 @@
   }  
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
+  .about {
+    margin-top: 100px;
+  }
+
+  .about-container {
+    flex-wrap: wrap;
+    width: 50vw;
+  }
+
+  .about-container img {
+    height: 200px;
+    max-width: 225px;
+    width: 100%;
+  }  
+ }
+
+@media only screen and (max-width: 768px) {
   .about {
     margin-top: 100px;
   }
@@ -41,12 +58,12 @@
   }
 
   .about-container img {
-    height: 200px;
+    height: 185px;
     max-width: 225px;
     width: 100%;
   }  
 }
 
 .about-container p {
-  padding: 30px;
+  padding: 15px;
 }
