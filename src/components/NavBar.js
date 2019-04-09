@@ -16,17 +16,17 @@ class NavBar extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className="navbar">
+      <div className="container">
+        <div className={!this.state.isOpen ? "navbar" : "mobile-links"}>
           <NavLink exact to="/" className="navlink" id="home">D. J. YOO</NavLink>
           <NavLink to="/about" className="navlink" id="about">ABOUT</NavLink>
           <NavLink to="/projects" className="navlink" id="work">WORK</NavLink>
           <NavLink to="/contact" className="navlink" id="contact">CONTACT</NavLink>
         </div>
   
-        <div className="mobile-navbar">
+        <div className={!this.state.isOpen ? "mobile-navbar" : "menu"}>
           <NavLink exact to="/" className="navlink" id="home">D. J. YOO</NavLink>
-          <i class="big bars icon" onClick={() => this.toggleMenu()}></i>
+          <i className="big bars icon" onClick={() => this.toggleMenu()}></i>
         </div>
       </div>
     )

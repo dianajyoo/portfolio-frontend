@@ -41,23 +41,46 @@
 }
 
 /* mobile navbar below */
-.mobile-navbar {
+
+.mobile-navbar, .menu {
   /* display: none; */
   display: flex;
   position: fixed;
   top: 0;
   width: 100vw;
-  border: solid;
-  background-color: white;
+  height: 7vh;
+  background-color: #f6f6f6;
   z-index: 1;
 }
 
-.mobile-navbar i {
+.mobile-navbar {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-navbar i, .menu i {
+  color: #878787;
   margin-right: 25px;
-  padding: 5px;
 }
 
 .navlink {
   margin-left: 0;
   padding: 5px;
+}
+
+.menu {
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+}
+
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 150px;
+  left: 40vw;
+  z-index: 2;
 }
