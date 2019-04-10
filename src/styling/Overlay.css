@@ -1,69 +1,57 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 
-.image {
-  margin: 0 auto;
-  transition: .5s ease;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-}
-
 @media only screen and (min-width: 992px) {
-  .image {
+  .image-container {
     width: 30vw;
     height: 32vh;
-  }  
+  }
 }
 
 @media only screen and (max-width: 992px) {
-  .image {
-     width: 60vw;
-     height: 45vh;
+   .image-container {
+      width: 60vw;
+      height: 45vh;
    }
  }
 
 @media only screen and (max-width: 768px) {
- .image {
-    width: 55vw;
-    height: 30vh;
-  }
+  .image-container {
+      width: 55vw;
+      height: 30vh;
+    }
 }
 
 .image-container {
   position: relative;
-  display: grid;
-  justify-content: center;
-  margin: 0 auto;
   font-family: "Work Sans", sans-serif;
   font-weight: 600;
   color: white;
 }
 
+.image {
+  width: inherit;
+  height: inherit;
+  transition: .5s ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
 .navlink {
-  position: absolute;
-  margin: 0 auto;
+  width: inherit;
+  height: inherit;
 }
 
 .image-container h1 {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 25%;
-  left: 35%;
-}
-
-.image-container p {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  padding: 3%;
-  font-size: 1.1em;
+  margin: 0 auto;
 }
 
 .image-container:hover .image {
   -webkit-filter: brightness(25%);
 }
 
-.image-container:hover h1, .image-container:hover p {
+.image-container:hover h1 {
   opacity: 1;
   color: rgba(255,255,255,0.8);
   -webkit-transition-delay: 0.05s;

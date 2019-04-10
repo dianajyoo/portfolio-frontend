@@ -1,6 +1,6 @@
 ## My Portfolio
 
-Visit [here](https://dianajyoo.herokuapp.com).
+Visit [here](www.dianajyoo.site).
 
 ## Built With
 
