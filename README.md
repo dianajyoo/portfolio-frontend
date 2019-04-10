@@ -1,6 +1,6 @@
 ## My Portfolio
 
-Visit [here](www.dianajyoo.site).
+Visit [here](http://www.dianajyoo.site).
 
 ## Built With
 
