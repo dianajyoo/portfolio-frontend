@@ -18,7 +18,7 @@ class ProjectContainer extends React.Component {
 
     return (
       <div className="project-container">
-        {this.props.projects.map(project => <Route path={`${match.url}/:workId`} render={(props) => <ProjectCard {...props} project={project} />} />)}  
+        {this.props.projects.map(project => <Route exact path={`${match.url}/:workId`} render={(props) => <ProjectCard {...props} project={project} />} />)}  
 
         <ProjectList renderPhotos={renderPhotos} />
       </div>

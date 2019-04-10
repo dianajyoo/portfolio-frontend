@@ -19,7 +19,7 @@ class App extends Component {
           <NavBar />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/projects" render={(props) => <ProjectContainer {...props} />} />
+            <Route path="/projects" render={(props) => <ProjectContainer {...props} />} />
             <Route exact path="/about" component={About} />
             <Route exact path="/contact" component={ContactForm} />
           </Switch>
