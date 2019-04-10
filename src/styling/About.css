@@ -4,7 +4,7 @@
   height: 80vh;
   width: 100vw;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.2rem;
   color: rgba(33,33,33);
 }
@@ -13,6 +13,10 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
+}
+
+.about-container img {
+  padding: 20px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -65,5 +69,5 @@
 }
 
 .about-container p {
-  padding: 15px;
+  padding: 20px;
 }

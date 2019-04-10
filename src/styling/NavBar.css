@@ -6,22 +6,31 @@
   top: 0;
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(4, 25vw);
+  grid-template-columns: repeat(4, 10vw);
   background-color: white;
   padding: 0.5rem;
   z-index: 1;
-  display: none;
 }
 
 @media only screen and (min-width: 992px) {
   .navbar {
     height: 7vh;
+    visibility: visible;
+  }
+
+  .mobile-navbar, .menu {
+    visibility: hidden;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .navbar {
     height: 10vh;
+    visibility: hidden;
+  }
+
+  .mobile-navbar, .menu {
+    visibility: visible;
   }
 }
 
@@ -43,7 +52,6 @@
 /* mobile navbar below */
 
 .mobile-navbar, .menu {
-  /* display: none; */
   display: flex;
   position: fixed;
   top: 0;
@@ -61,6 +69,7 @@
 .mobile-navbar {
   display: flex;
   align-items: center;
+  transition: all 0.2s ease-in-out;
 }
 
 .menu button {

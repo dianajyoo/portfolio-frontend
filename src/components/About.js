@@ -9,16 +9,16 @@ class About extends React.Component {
           <img src={require("../images/profile.jpg")} alt="profile pic" />
           <p>
             <span>
-              Hi, my name is Diana J. Yoo. I'm a full stack web developer based in New York City.
-              I love the creative process of building applications from scratch.
-              I'm constantly learning new web technologies and design.
+              Hi, my name is Diana J. Yoo. I'm a full stack web developer and recent Flatiron School grad based in New York City.
+              I love the creative process of building applications from conception to implementation.
+              I work with React, Redux, and CSS for front end and Node and RoR for back end, but I'm constantly learning new web technologies and design.
             </span>
 
             <br />
             <br />
             
             <span>
-              When I'm not coding, I like to run, travel, read, and try new dishes.
+              When I'm not coding, I like to run, travel, read, and try new dishes. Send me an email if you want to keep in touch!
             </span>
           </p>
         </div>
