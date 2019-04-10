@@ -26,7 +26,12 @@ class NavBar extends React.Component {
   
         <div className={!this.state.isOpen ? "mobile-navbar" : "menu"}>
           <NavLink exact to="/" className="navlink" id="home">D. J. YOO</NavLink>
-          <i className="big bars icon" onClick={() => this.toggleMenu()}></i>
+          
+          <button className={!this.state.isOpen ? "hamburger hamburger--slider" : "hamburger hamburger--slider is-active"} type="button" onClick={() => this.toggleMenu()}>
+            <span className="hamburger-box">
+              <span className="hamburger-inner"></span>
+            </span>
+          </button>
         </div>
       </div>
     )
