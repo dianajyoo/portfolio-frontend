@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/"
+const API_URL = "https://my-portfolio-backend.herokuapp.com/"
 
 export const getPhoto = (data) => {
   return {
