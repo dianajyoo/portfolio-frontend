@@ -19,8 +19,8 @@
   font-family: "Work Sans", sans-serif;
   font-weight: 600;
   color: rgba(133,207,218);
-  margin-top: 200px;
   text-align: right;
+  margin-top: 150px;
 }
 
 #project-id span {
@@ -60,7 +60,7 @@
   }
 
   .details-container img {
-    max-width: 60vw;
+    max-width: 65vw;
     height: 50vh;
     width: 100%;
   }
@@ -82,6 +82,27 @@
 
   .details-container img {
     max-width: 60vw;
+    height: 40vh;
+    width: 100%;
+  }
+
+  #project-id {
+    font-size: 5rem;
+    margin-right: 25px;
+  }
+
+  .summary {
+    padding: 35px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .details-container {
+    flex-wrap: wrap;
+  }
+
+  .details-container img {
+    max-width: 75vw;
     height: 35vh;
     width: 100%;
   }
