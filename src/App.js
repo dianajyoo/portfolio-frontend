@@ -7,6 +7,7 @@ import ContactForm from "./components/ContactForm"
 import About from "./components/About"
 import NavBar from "./components/NavBar"
 import Footer from "./components/Footer"
+import NoMatch from "./components/NoMatch"
 
 import '../node_modules/semantic-ui/dist/semantic.min.css'
 import './App.css'
@@ -21,7 +22,8 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/projects" render={(props) => <ProjectContainer {...props} />} />
             <Route exact path="/about" component={About} />
-            <Route exact path="/contact" component={ContactForm} />
+            {/* <Route exact path="/contact" component={ContactForm} /> */}
+            <Route component={NoMatch} />
           </Switch>
           <Footer />
         </div>

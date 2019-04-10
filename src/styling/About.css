@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 
 .about {
-  height: 80vh;
+  height: 65vh;
   width: 100vw;
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
@@ -13,6 +13,7 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  background-color: #f6f6f6;
 }
 
 .about-container img {
@@ -29,8 +30,8 @@
   }
 
   .about-container img {
-    height: 275px;
-    max-width: 300px;
+    height: 50%;
+    max-width: 50%;
     width: 100%;
   }  
 }
@@ -42,12 +43,12 @@
 
   .about-container {
     flex-wrap: wrap;
-    width: 50vw;
+    width: 70%;
   }
 
   .about-container img {
-    height: 200px;
-    max-width: 225px;
+    height: 60%;
+    max-width: 60%;
     width: 100%;
   }  
  }
@@ -58,16 +59,21 @@
   }
 
   .about-container {
+    width: 75%;
     flex-wrap: wrap;
   }
 
   .about-container img {
-    height: 185px;
-    max-width: 225px;
+    height: 95%;
+    max-width: 95%;
     width: 100%;
   }  
 }
 
 .about-container p {
   padding: 20px;
+}
+
+.about-container p span:nth-of-type(2) a {
+  color: #785027;
 }

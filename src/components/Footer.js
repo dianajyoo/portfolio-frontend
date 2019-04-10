@@ -12,7 +12,8 @@ const Footer = (props) => {
     } else if (e.target.className === "linkedin icon") {
       window.open("https://www.linkedin.com/in/dianajyoo")
     } else {
-      props.history.replace("/contact")
+      // props.history.replace("/contact")
+      window.location.href = `mailto:${process.env.REACT_APP_EMAIL_USER}`
     }
   }
 

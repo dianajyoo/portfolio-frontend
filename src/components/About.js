@@ -18,7 +18,7 @@ class About extends React.Component {
             <br />
             
             <span>
-              When I'm not coding, I like to run, travel, read, and try new dishes. Send me an email if you want to keep in touch!
+              When I'm not coding, I like to run, travel, read, and try new dishes. Send me an <a href={`mailto:${process.env.REACT_APP_EMAIL_USER}`}>email</a> if you want to keep in touch!
             </span>
           </p>
         </div>
