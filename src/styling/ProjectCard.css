@@ -1,26 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 
-.project-container {
-  /* overflow: scroll; */
-}
-
 .details-container {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 75vh;
-  max-width: 1080px;
-  width: 100vw;
   margin: 0 auto;
+  background-color: #f6f6f6;
 }
 
 #project-id {
+  position: relative;
   font-family: "Work Sans", sans-serif;
   font-weight: 600;
   color: rgba(133,207,218);
   text-align: right;
   margin-top: 150px;
+  z-index: 1;
 }
 
 #project-id span {
@@ -43,9 +39,15 @@
     margin-right: 200px;
   }
 
+  .details-container {
+    height: 60vh;
+    max-width: 1080px;
+    width: 100vw;
+  }
+
   .details-container img {
-    max-width: 40vw;
-    height: 45vh;
+    max-width: 45vw;
+    height: 50vh;
     width: 100%;
   }
 
@@ -57,17 +59,21 @@
 @media only screen and (max-width: 992px) {
   .details-container {
     flex-wrap: wrap;
+    height: 100vh;
+    max-width: 70vw;
+    width: 100vw;
+    margin-bottom: 200px;
   }
 
   .details-container img {
-    max-width: 65vw;
-    height: 50vh;
+    width: 70vw;
+    height: 45vh;
     width: 100%;
   }
 
   #project-id {
-    font-size: 6rem;
-    margin-right: 80px;
+    font-size: 8rem;
+    margin-right: 150px;
   }
 
   .summary {
@@ -78,38 +84,44 @@
 @media only screen and (max-width: 768px) {
   .details-container {
     flex-wrap: wrap;
+    height: 90vh;
+    max-width: 70vw;
+    width: 100vw;
   }
 
   .details-container img {
-    max-width: 60vw;
+    max-width: 70vw;
     height: 40vh;
     width: 100%;
   }
 
   #project-id {
-    font-size: 5rem;
-    margin-right: 25px;
+    font-size: 8rem;
+    margin-right: 150px;
   }
 
   .summary {
-    padding: 35px;
+    padding: 30px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .details-container {
     flex-wrap: wrap;
+    height: 100vh;
+    max-width: 80vw;
+    width: 100vw;
   }
 
   .details-container img {
-    max-width: 75vw;
+    max-width: 80vw;
     height: 35vh;
     width: 100%;
   }
 
   #project-id {
-    font-size: 5rem;
-    margin-right: 25px;
+    font-size: 7rem;
+    margin-right: 60px;
   }
 
   .summary {

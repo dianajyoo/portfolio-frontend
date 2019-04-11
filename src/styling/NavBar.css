@@ -9,7 +9,7 @@
   grid-template-columns: repeat(4, 10vw);
   background-color: white;
   padding: 0.5rem;
-  z-index: 1;
+  z-index: 5;
 }
 
 @media only screen and (min-width: 992px) {
@@ -20,6 +20,17 @@
 
   .mobile-navbar, .menu {
     visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar {
+    height: 10vh;
+    visibility: hidden;
+  }
+
+  .mobile-navbar, .menu {
+    visibility: visible;
   }
 }
 
@@ -58,7 +69,7 @@
   width: 100vw;
   height: 7vh;
   background-color: #f6f6f6;
-  z-index: 1;
+  z-index: 5;
 }
 
 .menu {
@@ -79,7 +90,7 @@
 
 .navlink {
   left: 0;
-  padding: 5px;
+  padding: 20px;
 }
 
 .container {
@@ -92,7 +103,7 @@
   position: fixed;
   top: 25%;
   left: 40%;
-  z-index: 2;
+  z-index: 6;
   -webkit-animation: fadeIn 2s linear;
   -moz-animation: fadeIn 2s linear; /* firefox */
 }

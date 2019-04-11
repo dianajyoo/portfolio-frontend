@@ -17,7 +17,7 @@
 }
 
 .about-container img {
-  padding: 20px;
+  padding: 30px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -26,12 +26,12 @@
   }
 
   .about-container {
-    width: 50%;
+    width: 60%;
   }
 
   .about-container img {
-    height: 50%;
-    max-width: 50%;
+    height: 40%;
+    max-width: 40%;
     width: 100%;
   }  
 }
@@ -59,8 +59,8 @@
   }
 
   .about-container {
-    width: 75%;
     flex-wrap: wrap;
+    width: 75%;
   }
 
   .about-container img {
@@ -71,7 +71,15 @@
 }
 
 .about-container p {
-  padding: 20px;
+  padding: 30px;
+}
+
+.about-container p span:nth-of-type(2) a {
+  color: #785027;
+}
+
+.about-container p {
+  padding: 30px;
 }
 
 .about-container p span:nth-of-type(2) a {
