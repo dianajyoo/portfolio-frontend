@@ -1,4 +1,5 @@
 import React from "react"
+import Footer from "./Footer"
 import "../styling/ProjectList.css"
 
 class ProjectList extends React.Component {
@@ -14,6 +15,7 @@ class ProjectList extends React.Component {
             <p>WORK<span>.</span></p>
             {renderPhotos}
           </div>
+          <Footer />
         </div>
       )
     }

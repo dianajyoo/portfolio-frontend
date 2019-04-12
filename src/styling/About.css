@@ -14,6 +14,7 @@
   justify-content: center;
   margin: 0 auto;
   background-color: #f6f6f6;
+  margin-bottom: 100px;
 }
 
 .about-container img {
@@ -30,8 +31,8 @@
   }
 
   .about-container img {
-    height: 40%;
-    max-width: 40%;
+    height: 50%;
+    max-width: 50%;
     width: 100%;
   }  
 }
@@ -68,14 +69,6 @@
     max-width: 95%;
     width: 100%;
   }  
-}
-
-.about-container p {
-  padding: 30px;
-}
-
-.about-container p span:nth-of-type(2) a {
-  color: #785027;
 }
 
 .about-container p {

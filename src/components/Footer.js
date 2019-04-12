@@ -18,7 +18,7 @@ const Footer = (props) => {
   }
 
   return (
-    <div className="footer" id="container">
+    <div className="footer" id="footer-container">
       <div className="footer text-container">
         <p>STAY CONNECTED</p>
       

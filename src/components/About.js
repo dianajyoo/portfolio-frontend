@@ -1,4 +1,6 @@
 import React from "react"
+import Footer from "./Footer"
+
 import "../styling/About.css"
 
 class About extends React.Component {
@@ -6,7 +8,7 @@ class About extends React.Component {
     return (
       <div className="about">
         <div className="about-container">
-          <img src={require("../images/150239.jpg")} alt="profile pic" />
+          <img src={require("../images/150239.jpg")} alt="me" />
           <p>
             <span>
               Hi, my name is Diana J. Yoo. I'm a full stack web developer and recent Flatiron School grad based in New York City.
@@ -22,6 +24,7 @@ class About extends React.Component {
             </span>
           </p>
         </div>
+        <Footer />
       </div>
     )
   }
