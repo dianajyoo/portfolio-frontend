@@ -19,7 +19,7 @@ class ProjectList extends React.Component {
     }
 
     return (
-      <div className="grid-container">
+      <div className="grid">
         <div className="lds-grid">
           <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
         </div>

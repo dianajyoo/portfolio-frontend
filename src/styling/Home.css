@@ -1,20 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 
 .home {
-  /* background-image:
-  linear-gradient(
-    rgba(0,0,0,0),
-    rgba(0,0,0,0)
-    ),
-    url("../images/home.jpg") !important;
-  background-repeat: no-repeat;
-  background-size: cover; */
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 95vh;
   width: 100vw;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -24,6 +16,7 @@
   white-space: pre-line;
   animation-duration: 2s;
   animation-name: bounceIn;
+  margin-top: 200px;
 }
 
 /* laptops */

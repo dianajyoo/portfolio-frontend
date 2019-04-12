@@ -2,7 +2,7 @@ import React from "react"
 import { NavLink } from "react-router-dom"
 import "../styling/Home.css"
 
-const Home = (props) => {
+const Home = () => {
   return (
     <div className="home">
       <p><span>Diana J. Yoo</span> {"\n"} full stack <span>developer</span> {"\n"} from nyc</p>

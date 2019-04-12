@@ -1,34 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 
-@media only screen and (min-width: 992px) {
-  .image-container {
-    width: 30vw;
-    height: 32vh;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-   .image-container {
-      width: 50vw;
-      height: 35vh;
-   }
- }
-
-@media only screen and (max-width: 768px) {
-  .image-container {
-      width: 50vw;
-      height: 30vh;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-  .image-container {
-      width: 55vw;
-      height: 20vh;
-    }
-}
-
 .image-container {
+  height: 100%;
+  width: 100%;
   position: relative;
   font-family: "Work Sans", sans-serif;
   font-weight: 600;
