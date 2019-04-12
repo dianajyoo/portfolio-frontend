@@ -16,7 +16,7 @@ class NavBar extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="navbar-container">
         <div className={!this.state.isOpen ? "navbar" : "mobile-links"}>
           <NavLink exact to="/" className="navlink" id="home">D. J. YOO</NavLink>
           <NavLink to="/about" className="navlink" id="about">ABOUT</NavLink>

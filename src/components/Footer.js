@@ -2,7 +2,7 @@ import React from "react"
 import { withRouter } from "react-router"
 import "../styling/Footer.css"
 
-const Footer = (props) => {
+const Footer = () => {
 
   const openClickedLink = (e) => {
     if (e.target.className === "github icon") {

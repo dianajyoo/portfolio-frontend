@@ -34,17 +34,6 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .navbar {
-    height: 10vh;
-    visibility: hidden;
-  }
-
-  .mobile-navbar, .menu {
-    visibility: visible;
-  }
-}
-
 .navlink {
   position: relative;
   font-family: "Work Sans", sans-serif;
@@ -67,7 +56,6 @@
   position: fixed;
   top: 0;
   width: 100vw;
-  height: 7vh;
   background-color: #f6f6f6;
   z-index: 5;
 }
@@ -80,6 +68,7 @@
 .mobile-navbar {
   display: flex;
   align-items: center;
+  height: 7vh;
   transition: all 0.2s ease-in-out;
 }
 
@@ -93,7 +82,8 @@
   padding: 20px;
 }
 
-.container {
+.navbar-container {
+  width: 100vw;
   position: relative;
 }
 
@@ -101,8 +91,8 @@
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 25%;
-  left: 40%;
+  top: 20%;
+  left: 38%;
   z-index: 6;
   -webkit-animation: fadeIn 2s linear;
   -moz-animation: fadeIn 2s linear; /* firefox */
